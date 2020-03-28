@@ -25,4 +25,7 @@
     <!-- Whether the device has a popup camera -->
     <bool name="config_hasPopupCamera">true</bool>
 
+    <!-- Enable face auth only when swiping security view -->
+    <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
+
 </resources>
