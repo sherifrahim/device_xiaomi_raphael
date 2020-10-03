@@ -30,9 +30,8 @@
     <!-- Screen off FOD -->
     <bool name="config_supportScreenOffFod">true</bool>
 
-    <!-- Device specific doze package -->
-    <string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
-
     <!-- Smart Charging -->
     <bool name="config_supportSmartCharging">true</bool>
+
+    <string name="config_customDozePackage">com.custom.ambient.display/com.custom.ambient.display.DozeSettings</string>
 </resources>
