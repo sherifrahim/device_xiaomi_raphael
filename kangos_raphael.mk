@@ -13,7 +13,7 @@ TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
 USE_GAPPS := false
-
+TARGET_OPLAUNCHER := true
 $(call inherit-product, vendor/kangos/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
