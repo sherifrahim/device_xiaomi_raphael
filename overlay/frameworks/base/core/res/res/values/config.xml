@@ -571,4 +571,8 @@
     <string name="db_default_journal_mode">MEMORY</string>
     <string name="db_default_sync_mode">OFF</string>
     <string name="db_wal_sync_mode">OFF</string>
+
+    <!-- Shows the required view for in-display fingerprint -->
+    <bool name="config_needCustomFODView">true</bool>
+
 </resources>

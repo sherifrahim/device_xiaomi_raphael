@@ -1,0 +1,51 @@
+[
+    {
+        "remote":       "fluid-devices",
+        "repository":   "kernel_xiaomi_raphael",
+        "target_path":  "kernel/xiaomi/raphael",
+        "branch":       "fluid-11"
+    },
+    {
+        "remote":       "fluid-devices",
+        "repository":   "vendor_xiaomi_raphael",
+        "target_path":  "vendor/xiaomi/raphael",
+        "branch":       "fluid-11"
+    },
+    {
+        "remote":       "fluid-devices",
+        "repository":   "device_xiaomi_raphael-sepolicy",
+        "target_path":  "device/xiaomi/raphael-sepolicy",
+        "branch":       "fluid-11"
+    },
+    {
+        "remote":       "github",
+        "repository":   "kdrag0n/proton-clang",
+        "clone-depth":  "1",
+        "target_path":  "prebuilts/clang/host/linux-x86/clang-proton",
+        "branch":       "master"
+    },
+    {
+        "remote":       "github",
+        "repository":   "san9-s-dumpster/android_hardware_qcom_audio",
+        "target_path":  "hardware/qcom-caf/sm8150/audio",
+        "branch":       "android_11-caf-sm8150"
+    },
+    {
+        "remote":       "github",
+        "repository":   "san9-s-dumpster/android_hardware_qcom_display",
+        "target_path":  "hardware/qcom-caf/sm8150/display",
+        "branch":       "android_11-caf-sm8150"
+    },
+    {
+        "remote":       "github",
+        "repository":   "san9-s-dumpster/android_hardware_qcom_media",
+        "target_path":  "hardware/qcom-caf/sm8150/media",
+        "branch":       "android_11-caf-sm8150"
+    },
+    {
+        "remote":       "github",
+        "repository":   "san9-s-dumpster/android_vendor_qcom_opensource_display-commonsys-intf",
+        "target_path":  "vendor/qcom/opensource/commonsys-intf/display",
+        "branch":       "android_11"
+    }
+]
