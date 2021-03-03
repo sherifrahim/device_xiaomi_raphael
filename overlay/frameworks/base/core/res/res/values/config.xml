@@ -575,4 +575,10 @@
     <!-- Shows the required view for in-display fingerprint -->
     <bool name="config_needCustomFODView">true</bool>
 
+	<!-- Enable face auth only when swiping security view -->
+    <bool name="config_faceAuthOnlyOnSecurityView">true</bool>
+
+    <!-- Pocket Lock -->
+    <bool name="config_pocketUseLightSensor">false</bool>
+
 </resources>
