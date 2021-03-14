@@ -397,6 +397,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.zram.periodic_wb_delay_hours=24
 
 # QTI
+TARGET_COMMON_QTI_COMPONENTS := \
+    perf
+
 PRODUCT_PACKAGES += \
     libjson \
     libqti_vndfwk_detect \
@@ -449,10 +452,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
-
-# Service Tracker
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2.vendor
 
 # System Helper
 PRODUCT_PACKAGES += \
