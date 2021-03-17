@@ -1056,7 +1056,7 @@ vendor/etc/sound_trigger_mixer_paths_wcd9340_qrd.xml
 vendor/etc/sound_trigger_platform_info.xml
 vendor/lib/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib/hw/sound_trigger.primary.msmnile.so
+vendor/lib/hw/sound_trigger.primary.msmnile.so|c0a2b43ef74fe723b5419b166ec71b9a051d9a87
 vendor/lib/libadpcmdec.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
@@ -1069,7 +1069,7 @@ vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.2-impl.so
 vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so
-vendor/lib64/hw/sound_trigger.primary.msmnile.so
+vendor/lib64/hw/sound_trigger.primary.msmnile.so|6d7a911ceb08462b2ec5dbacf3cd188b3cb7b3f2
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libgcs-calwrapper.so
