@@ -3,9 +3,9 @@ ro.surface_flinger.supports_background_blur=1
 persist.sys.sf.disable_blurs=1
 ro.sf.blurs_are_expensive=1
 
-# Fluid specific props
-ro.fluid.maintainer=san9
-ro.fluid.cpu=SDM855
+# Kangos specific props
+ro.kangos.maintainer=Sherif_Rahim
+ro.kangos.cpu=SDM855
 
 # Gboard
 ro.com.google.ime.kb_pad_port_b=1

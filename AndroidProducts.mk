@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fluid_raphael.mk
+    $(LOCAL_DIR)/kangos_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    fluid_raphael-user \
-    fluid_raphael-userdebug \
-    fluid_raphael-eng
+    kangos_raphael-user \
+    kangos_raphael-userdebug \
+    kangos_raphael-eng
