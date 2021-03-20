@@ -36,11 +36,11 @@
     <dimen name="navigation_side_padding">85dp</dimen>
 
     <!-- The absolute side margins of quick settings -->
-    <dimen name="rounded_corner_content_padding">7dp</dimen>
+    <dimen name="rounded_corner_content_padding">6dp</dimen>
 
     <!-- Radius of the software rounded corners. -->
-     <dimen name="rounded_corner_radius">103px</dimen>
+     <dimen name="rounded_corner_radius">100px</dimen>
 
     <!-- Adjustment for software rounded corners since corners aren't perfectly round. -->
-    <dimen name="rounded_corner_radius_adjustment">19px</dimen>
+    <dimen name="rounded_corner_radius_adjustment">16px</dimen>
 </resources>
