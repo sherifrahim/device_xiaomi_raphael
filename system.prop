@@ -12,6 +12,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Bluetooth
 persist.vendor.btstack.enable.twsplus=true
+persist.vendor.bt.a2dp.aac_whitelist=false
 persist.vendor.btstack.connect.peer_earbud=true
 ro.bluetooth.library_name=libbluetooth_qti.so
 ro.bluetooth.emb_wp_mode=false
