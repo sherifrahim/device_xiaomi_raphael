@@ -1087,9 +1087,9 @@ vendor/lib64/libgcs.so
 vendor/lib64/liblistensoundmodel2.so
 vendor/lib64/libmulawdec.so
 
-# Listen (sound_trigger primary) - from coral-user-11-RQ2A.210305.006-7119741-release-keys
-vendor/lib/hw/sound_trigger.primary.msmnile.so|c0a2b43ef74fe723b5419b166ec71b9a051d9a87
-vendor/lib64/hw/sound_trigger.primary.msmnile.so|6d7a911ceb08462b2ec5dbacf3cd188b3cb7b3f2
+# Listen (sound_trigger primary)
+vendor/lib/hw/sound_trigger.primary.msmnile.so
+vendor/lib64/hw/sound_trigger.primary.msmnile.so
 
 # Media
 vendor/etc/configstore/vpp.configstore.xml
