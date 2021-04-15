@@ -728,9 +728,6 @@ vendor/lib64/libdiagjni.so
 vendor/etc/hdr_config.cfg
 vendor/etc/sdr_config.cfg
 
-# Display QDCM - from raphael-user 11 RKQ1.200826.002 21.3.3 patched
-vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml|466f515f4dce2e4138f894946024937f1e953a8f
-
 # Display (Postprocessing)
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
@@ -759,6 +756,9 @@ vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
+
+# Display (QCDM) - from hentaiOS
+vendor/etc/qdcm_calib_data_samsung_ea8076_fhd_cmd_dsi_panel.xml|46a4ad209cc6ec3e8726e0611973c4b5a789bbfd
 
 # Dolby
 -system_ext/priv-app/MotoDolbyV3/MotoDolbyV3.apk|c25de23bcf6441da256b7b6ba46cf6372f5dd7b1
