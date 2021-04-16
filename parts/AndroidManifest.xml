@@ -23,8 +23,6 @@
     <uses-permission android:name="android.permission.GET_TASKS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-    <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
     <uses-sdk
         android:minSdkVersion="24"
         android:targetSdkVersion="24"/>
@@ -40,28 +38,22 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".doze.DozeService"
-                 android:permission="XiaomiDozeService">
-        </service>
+        <activity
+            android:name=".dirac.DiracActivity"
+            android:label="@string/dirac_title"
+            android:theme="@style/Theme.Main">
+            <intent-filter>
+                <action android:name="com.android.settings.action.IA_SETTINGS" />
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category"
+                       android:value="com.android.settings.category.ia.sound" />
+            <meta-data
+                android:name="com.android.settings.summary"
+                android:resource="@string/dirac_summary" />
+        </activity>
 
         <service android:name=".popupcamera.PopupCameraService"
                  android:permission="PopupCameraService">
-        </service>
-
-        <service
-            android:name=".fpsinfo.FPSInfoService"
-            android:exported="false">
-        </service>
-
-        <service
-            android:name=".fpsinfo.FPSTileService"
-            android:icon="@drawable/ic_fps"
-            android:label="@string/fps_info_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
         </service>
 
         <service
@@ -74,31 +66,6 @@
                     android:name="android.service.quicksettings.action.QS_TILE"/>
             </intent-filter>
         </service>
-
-        <service
-            android:name=".display.HBMTileService"
-            android:icon="@drawable/ic_hbm_tile"
-            android:label="@string/hbm_mode_title"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-        <activity
-            android:name=".doze.DozeSettingsActivity"
-            android:label="@string/ambient_display_title"
-            android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="com.android.settings.action.IA_SETTINGS" />
-            </intent-filter>
-            <meta-data android:name="com.android.settings.category"
-                       android:value="com.android.settings.category.ia.display" />
-            <meta-data
-                android:name="com.android.settings.summary"
-                android:resource="@string/device_settings_app_name" />
-        </activity>
 
         <activity
             android:name=".popupcamera.PopupCameraSettingsActivity"
@@ -161,8 +128,8 @@
         </activity>
 
 		<activity
-            android:name=".display.DisplaySettingsActivity"
-            android:label="@string/display_settings_title"
+            android:name=".display.DcDimmingSettingsActivity"
+            android:label="@string/dc_dimming_enable_title"
             android:theme="@style/Theme.Main">
             <intent-filter>
                 <action android:name="com.android.settings.action.IA_SETTINGS" />
@@ -173,10 +140,7 @@
                 android:value="com.android.settings.category.ia.display" />
             <meta-data
                 android:name="com.android.settings.summary"
-                android:resource="@string/display_settings_summary" />
-            <meta-data
-                android:name="com.android.settings.order"
-                android:value="-10" />
+                android:resource="@string/dc_dimming_enable_summary" />
         </activity>
         
     </application>
