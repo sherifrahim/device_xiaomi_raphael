@@ -374,7 +374,9 @@ PRODUCT_PACKAGES += \
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
-    android.hardware.power.stats@1.0-service
+    android.hardware.power.stats@1.0-service \
+    android.hardware.power@1.3-service.sm8150-libperfmgr \
+    powerhint.json
 
 PRODUCT_COPY_FILES += \
     vendor/qcom/opensource/power/config/msmnile/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml

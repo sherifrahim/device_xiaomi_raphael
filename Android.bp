@@ -1,3 +1,10 @@
+soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/xiaomi",
+    ],
+}
+
 hidl_package_root {
     name: "vendor.xiaomi",
     path: "device/xiaomi/raphael/interfaces",
