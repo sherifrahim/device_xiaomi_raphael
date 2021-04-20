@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/kangos_raphael.mk
+    $(LOCAL_DIR)/aosp_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    kangos_raphael-user \
-    kangos_raphael-userdebug \
-    kangos_raphael-eng
+    aosp_raphael-user \
+    aosp_raphael-userdebug \
+    aosp_raphael-eng

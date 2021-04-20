@@ -8,18 +8,19 @@
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common KangOS stuff.
-KANGOS_BUILDTYPE := OFFICIAL
+NEZUKO_BUILD_TYPE := OFFICIAL
+NEZUKO_MAINTAINER := Sherif_Rahim
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-USE_GAPPS := false
-TARGET_OPLAUNCHER := true
-$(call inherit-product, vendor/kangos/config/common.mk)
+
+$(call inherit-product, vendor/oplauncher/OPLauncher.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := raphael
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := kangos_raphael
+PRODUCT_NAME := aosp_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

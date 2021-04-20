@@ -19,6 +19,7 @@ BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/raphael
 BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Architecture
 TARGET_ARCH := arm64
