@@ -22,14 +22,14 @@ NEZUKO_MAINTAINER := SherifRahim
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_PRODUCT_PROPERTIES += \
-  ro.ssos.cpu=SD855
+  ro.nezuko.cpu=SD855
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := ssos_raphael
+PRODUCT_NAME := nezuko_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
@@ -37,8 +37,6 @@ PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="raphael"
-
-PRODUCT_NAME := aosp_raphael
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
