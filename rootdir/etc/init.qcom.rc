@@ -371,3 +371,8 @@ service vendor.power-hal /vendor/bin/hw/android.hardware.power-service-qti
 on charger
     setprop persist.sys.usb.config mass_storage
     start vendor.qcom-post-boot
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/unix
