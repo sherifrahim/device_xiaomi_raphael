@@ -1,0 +1,15 @@
+[
+    {
+        "remote":       "github",
+        "repository":   "kdrag0n/proton-clang",
+        "clone-depth":  "1",
+        "target_path":  "prebuilts/clang/host/linux-x86/clang-proton",
+        "branch":       "master"
+    },
+    {
+        "remote":       "github",
+        "repository":   "sherifrahim/android_hardware_qcom_display",
+        "target_path":  "hardware/qcom-caf/sm8150/display",
+        "branch":       "android_11-caf-sm8150"
+    }
+]

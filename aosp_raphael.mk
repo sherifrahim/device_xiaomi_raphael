@@ -3,6 +3,7 @@
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 #      http://www.apache.org/licenses/LICENSE-2.0
 #
@@ -15,8 +16,16 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/ssos/config/common_full_phone.mk)
+# Inherit some common NezuKo stuff.
+NEZUKO_BUILD_TYPE := OFFICIAL
+NEZUKO_MAINTAINER := SherifRahim
+TARGET_USES_BLUR := true
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+
+PRODUCT_PRODUCT_PROPERTIES += \
+  ro.ssos.cpu=SD855
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := ssos_raphael
@@ -28,14 +37,7 @@ PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="raphael"
 
+PRODUCT_NAME := aosp_raphael
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# ShapeShiftOS stuff
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.ssos.cpu=SD855
-
-SSOS_BUILD_TYPE := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_BLUR := true
-EXTRA_FOD_ANIMATIONS := true
