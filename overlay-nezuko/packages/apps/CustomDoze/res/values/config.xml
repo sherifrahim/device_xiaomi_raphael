@@ -16,9 +16,6 @@
 */
 -->
 <resources>
-    <!-- Defines the custom proximity sensor used by various OEMs like OnePlus-->
-    <string name="config_custom_tilt">xiaomi.sensor.pickup</string>
-
     <!-- Default screen brightness, from 0 to 255. 78 is 30%. -->
     <integer name="def_screen_brightness">80</integer>
 
