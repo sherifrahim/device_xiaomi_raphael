@@ -15,13 +15,13 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.popupcamera;
+package org.lineageos.settings.doze;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
 
-public class PopupCameraSettingsActivity extends PreferenceActivity {
-    private static final String TAG_POPUPCAMERA = "popupcamera";
+public class DozeSettingsActivity extends PreferenceActivity {
+    private static final String TAG_DOZE = "doze";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +29,7 @@ public class PopupCameraSettingsActivity extends PreferenceActivity {
 
         getFragmentManager()
                 .beginTransaction()
-                .replace(android.R.id.content, new PopupCameraSettingsFragment(), TAG_POPUPCAMERA)
+                .replace(android.R.id.content, new DozeSettingsFragment(), TAG_DOZE)
                 .commit();
     }
 }
