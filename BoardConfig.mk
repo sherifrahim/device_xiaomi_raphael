@@ -144,6 +144,10 @@ ifeq ($(BOARD_KERNEL_SEPARATED_DTBO),true)
     BOARD_INCLUDE_RECOVERY_DTBO := true
 endif
 
+ODM_MANIFEST_SKUS += raphael
+ODM_MANIFEST_RAPHAEL_FILES := \
+    $(DEVICE_PATH)/manifest-nfc.xml
+
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
 
