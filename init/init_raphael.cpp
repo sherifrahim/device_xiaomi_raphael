@@ -131,6 +131,9 @@ void vendor_load_properties() {
     }
 
     property_override("ro.boot.hardware.revision", hardware_revision.c_str());
+    if (region.find("CN") != std::string::npos ||
+        region.find("GLOBAL") != std::string::npos)
+        property_override("ro.boot.product.hardware.sku", "raphael");
 
     load_dalvikvm_properties();
 }
