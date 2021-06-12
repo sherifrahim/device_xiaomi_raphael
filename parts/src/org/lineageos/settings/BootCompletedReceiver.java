@@ -49,7 +49,7 @@ public class BootCompletedReceiver extends BroadcastReceiver {
         }
         PopupCameraUtils.startService(context);
         DozeUtils.checkDozeService(context);
-        ThermalUtils.startService(context);
+        ThermalUtils.initialize(context);
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
 
