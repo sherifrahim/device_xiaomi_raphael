@@ -21,12 +21,16 @@ NEZUKO_BUILD_TYPE := OFFICIAL
 NEZUKO_MAINTAINER := SherifRahim
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
-TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_GAPPS := true
+TARGET_INCLUDE_STOCK_ARCORE := false
+TARGET_INCLUDE_GOOGLE_RECORDER := false
 $(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_PRODUCT_PROPERTIES += \
   ro.nezuko.cpu=SD855
+
+WITH_FOD_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := nezuko_raphael
