@@ -16,20 +16,19 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common NezuKo stuff.
-NEZUKO_BUILD_TYPE := OFFICIAL
-NEZUKO_MAINTAINER := SherifRahim
+# Inherit some common radiant stuff.
+RADIANT_BUILD_TYPE := OFFICIAL
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/nezuko/config/common_full_phone.mk)
+$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_PRODUCT_PROPERTIES += \
-  ro.nezuko.cpu=SD855
+  ro.radiant.cpu=SD855
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := nezuko_raphael
+PRODUCT_NAME := radiant_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro

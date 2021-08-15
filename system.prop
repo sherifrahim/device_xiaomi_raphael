@@ -105,9 +105,6 @@ mm.enable.smoothstreaming=true
 # Netflix custom property
 ro.netflix.bsp_rev=Q855-16947-1
 
-# Nezuko Flags
-org.nezuko.build_maintainer=Sherif.Rahim
-
 # NFC
 ro.nfc.port=I2C
 

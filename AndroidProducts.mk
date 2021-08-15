@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/nezuko_raphael.mk
+    $(LOCAL_DIR)/radiant_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    nezuko_raphael-user \
-    nezuko_raphael-userdebug \
-    nezuko_raphael-eng
+    radiant_raphael-user \
+    radiant_raphael-userdebug \
+    radiant_raphael-eng
