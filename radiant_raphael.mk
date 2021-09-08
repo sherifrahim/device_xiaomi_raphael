@@ -16,19 +16,17 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common radiant stuff.
-RADIANT_BUILD_TYPE := OFFICIAL
+# Inherit some common 404 stuff.
 TARGET_USES_BLUR := true
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_STOCK_ARCORE := true
-$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
+$(call inherit-product, vendor/404/configs/common.mk)
+$(call inherit-product, vendor/google/pixel/config.mk)
+$(call inherit-product, vendor/google/gms/config.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.radiant.cpu=SD855
-
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := radiant_raphael
+PRODUCT_NAME := p404_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
