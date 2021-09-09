@@ -164,7 +164,12 @@ PRODUCT_COPY_FILES += \
 TARGET_BOARD_PLATFORM := msmnile
 
 PRODUCT_PACKAGES += \
-    libtinyxml
+    libtinyxml \
+    android.hardware.graphics.composer@2.3-service \
+    vendor.qti.hardware.display.allocator-service \
+    android.hardware.graphics.mapper@2.0-impl-qti-display \
+    hwcomposer.msmnile \
+    vendor.qti.hardware.display.mapper@3.0.vendor
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.ad=1 \
