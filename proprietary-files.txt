@@ -1289,6 +1289,7 @@ vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 -system_ext/app/datastatusnotification/datastatusnotification.apk
 -system_ext/app/embms/embms.apk
+vendor/etc/init/init.embmssl_server.rc
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml
 system_ext/etc/permissions/embms-noship_product_privapp_permissions_qti.xml
