@@ -166,6 +166,9 @@ ro.soc.model=SM8150
 # Time
 persist.timed.enable=true
 
+#Touchfeature
+ro.vendor.touchfeature.gamemode.enable=true
+
 # WiFi Display
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
