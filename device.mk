@@ -97,7 +97,6 @@ PRODUCT_PACKAGES += \
     audio.primary.msmnile \
     audio.r_submix.default \
     audio.usb.default \
-    libaacwrapper \
     libaudiopreprocessing \
     libbatterylistener \
     libbundlewrapper \
@@ -457,8 +456,4 @@ PRODUCT_PACKAGES += \
     libdisplayconfig.qti \
     libdisplayconfig.qti.vendor \
     libqdMetaData \
-    libnl \
-    libwfdaac_vendor
-
-#PRODUCT_BOOT_JARS += \
-#    WfdCommon
+    libnl
