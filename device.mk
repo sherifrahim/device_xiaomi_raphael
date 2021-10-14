@@ -212,8 +212,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi_raphael \
     android.hardware.biometrics.fingerprint@2.3.vendor \
-    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_raphael
+    vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
