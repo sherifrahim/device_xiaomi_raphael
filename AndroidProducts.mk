@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_raphael.mk
+    $(LOCAL_DIR)/radiant_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_raphael-userdebug \
-    arrow_raphael-eng
+    radiant_raphael-userdebug \
+    radiant_raphael-eng

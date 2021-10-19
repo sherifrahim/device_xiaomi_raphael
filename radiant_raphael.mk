@@ -12,17 +12,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from raphael device
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common Arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some Radiant stuff.
+$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
+RADIANT_BUILD_TYPE := OFFICIAL
+TARGET_GAPPS_ARCH := arm64
+TARGET_INCLUDE_STOCK_ARCORE := true
+USE_GAPPS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_raphael
+PRODUCT_NAME := radiant_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20 Pro
 PRODUCT_MANUFACTURER := Xiaomi
-
-DEVICE_MAINTAINER := TH779, kubersharma001
+TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_CHARACTERISTICS := nosdcard
 
