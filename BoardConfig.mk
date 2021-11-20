@@ -18,6 +18,7 @@
 BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/raphael
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # APEX
 OVERRIDE_TARGET_FLATTEN_APEX := true

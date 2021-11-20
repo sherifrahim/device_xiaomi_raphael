@@ -24,4 +24,6 @@
     <!-- Statusbar Left-Right padding defaults -->
     <integer name="config_statusbarPaddingStartDef">16</integer>
     <integer name="config_statusbarPaddingEndDef">5</integer>
+
+<bool name="config_audioPanelOnLeftSide">false</bool>
 </resources>
