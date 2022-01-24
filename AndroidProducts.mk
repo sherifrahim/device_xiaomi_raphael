@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/raphael.mk
+    $(LOCAL_DIR)/radiant_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    raphael-user \
-    raphael-userdebug \
-    raphael-eng
+    radiant_raphael-user \
+    radiant_raphael-userdebug \
+    radiant_raphael-eng
